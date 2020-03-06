@@ -1,17 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:id="@+id/activity_main"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="@color/e"
-              android:gravity="center_horizontal"
-              android:orientation="vertical"
-              tools:context="com.vondear.rxdemo.activity.ActivityMain">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/e"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.tamsiree.rxdemo.activity.ActivityMain">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerview"
+    <com.tamsiree.rxui.view.RxTitle
+        android:id="@+id/rx_title"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="@dimen/dp_55"
+        android:background="@color/colorPrimary"
+        app:leftIconVisibility="false"
+        app:title="RxTool" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray" />
+
+        <com.tamsiree.rxui.view.tablayout.TTabLayout
+            android:id="@+id/tab_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="#ffffff"
+            app:iconHeight="23dp"
+            app:iconWidth="23dp"
+            app:indicator_color="#2C97DE"
+            app:indicator_height="0dp"
+            app:textSelectColor="#2C97DE"
+            app:textUnSelectColor="#66000000"
+            app:titlesize="12sp"
+            app:underline_color="#DDDDDD"
+            app:underline_height="1dp" />
+
+    </LinearLayout>
+
 
 </LinearLayout>

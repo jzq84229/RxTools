@@ -8,12 +8,12 @@
               android:background="@color/e"
               android:gravity="center_horizontal"
               android:orientation="vertical"
-              tools:context="com.vondear.rxdemo.activity.ActivityRxCaptcha">
+              tools:context="com.tamsiree.rxdemo.activity.ActivityRxCaptcha">
 
-    <com.vondear.rxui.view.RxTitle
+    <com.tamsiree.rxui.view.RxTitle
         android:id="@+id/rx_title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/dp_55"
         app:rightIconVisibility="false"
         android:background="@color/blue"
         app:title="验证码工具的使用"
@@ -29,7 +29,7 @@
         android:padding="30dp">
 
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:cardBackgroundColor="#F2ECE1"
@@ -43,7 +43,7 @@
                 android:paddingBottom="10dp"
                 android:paddingTop="15dp">
 
-                <com.vondear.rxui.view.swipecaptcha.RxSwipeCaptcha
+                <com.tamsiree.rxui.view.swipecaptcha.RxSwipeCaptcha
                     android:id="@+id/swipeCaptchaView"
                     android:layout_width="200dp"
                     android:layout_height="100dp"
@@ -68,7 +68,7 @@
             </LinearLayout>
 
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
         <Button
             android:id="@+id/btnChange"

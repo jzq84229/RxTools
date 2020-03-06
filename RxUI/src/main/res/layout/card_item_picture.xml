@@ -8,7 +8,7 @@
     android:orientation="vertical"
     app:stackHeaderHeight="160dp">
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -34,7 +34,7 @@
                     android:adjustViewBounds="true"
                     android:scaleType="fitXY"/>
 
-                <com.vondear.rxui.view.RxTextAutoZoom
+                <com.tamsiree.rxui.view.RxTextAutoZoom
                     android:id="@+id/tv_number"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
@@ -184,6 +184,6 @@
 
         </LinearLayout>
 
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
 </LinearLayout>

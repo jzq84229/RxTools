@@ -9,10 +9,10 @@
     android:orientation="vertical"
     tools:context=".activity.ActivityDeviceInfo">
 
-    <com.vondear.rxui.view.RxTitle
+    <com.tamsiree.rxui.view.RxTitle
         android:id="@+id/rx_title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/dp_55"
         android:background="@color/colorPrimary"
         app:title="设备信息"/>
 
@@ -25,7 +25,7 @@
         android:text="获取手机信息"
         android:textColor="@color/white"/>
 
-    <android.support.v4.widget.NestedScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -608,6 +608,6 @@
 
         </LinearLayout>
 
-    </android.support.v4.widget.NestedScrollView>
+    </androidx.core.widget.NestedScrollView>
 
 </LinearLayout>

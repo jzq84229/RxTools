@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ActivityTGlideTabLayout">
+
+    <com.tamsiree.rxui.view.RxTitle
+        android:id="@+id/rx_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_55"
+        android:background="@color/colorPrimary"
+        app:title="TGlideTabLayout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eeeeee"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.tamsiree.rxui.view.tablayout.TGlideTabLayout
+                    android:id="@+id/tl_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#666666"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    app:indicator_gravity="TOP"
+                    app:textBold="SELECT"
+                    app:underline_color="#1A000000"
+                    app:underline_gravity="TOP"
+                    app:underline_height="1dp" />
+
+                <com.tamsiree.rxui.view.tablayout.TGlideTabLayout
+                    android:id="@+id/tl_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="#EEEEEE"
+                    app:divider_color="#1A000000"
+                    app:divider_padding="13dp"
+                    app:divider_width="1dp"
+                    app:indicator_color="#000000"
+                    app:indicator_height="1.5dp"
+                    app:indicator_width_equal_title="true"
+                    app:tab_padding="22dp"
+                    app:tab_space_equal="true"
+                    app:textSelectColor="#000000"
+                    app:textUnSelectColor="#66000000"
+                    app:underline_color="#1A000000"
+                    app:underline_height="1dp" />
+
+                <com.tamsiree.rxui.view.tablayout.TGlideTabLayout
+                    android:id="@+id/tl_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="#3F9FE0"
+                    app:textAllCaps="true"
+                    app:textBold="BOTH"
+                    app:titlesize="14sp" />
+
+                <com.tamsiree.rxui.view.tablayout.TGlideTabLayout
+                    android:id="@+id/tl_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="#009688"
+                    app:tab_padding="0dp"
+                    app:tab_width="95dp"
+                    app:titlesize="15sp" />
+
+                <com.tamsiree.rxui.view.tablayout.TGlideTabLayout
+                    android:id="@+id/tl_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="#F6CE59"
+                    app:indicator_width="10dp" />
+
+                <com.tamsiree.rxui.view.tablayout.TGlideTabLayout
+                    android:id="@+id/tl_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="#EC7263"
+                    app:indicator_corner_radius="2dp"
+                    app:indicator_height="4dp"
+                    app:indicator_width="4dp" />
+
+                <com.tamsiree.rxui.view.tablayout.TGlideTabLayout
+                    android:id="@+id/tl_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="#57385C"
+                    app:indicator_corner_radius="1.5dp"
+                    app:indicator_height="3dp"
+                    app:indicator_width="10dp" />
+
+                <com.tamsiree.rxui.view.tablayout.TGlideTabLayout
+                    android:id="@+id/tl_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="#E45171"
+                    app:indicator_color="#eeeeee"
+                    app:indicator_style="TRIANGLE" />
+
+                <com.tamsiree.rxui.view.tablayout.TGlideTabLayout
+                    android:id="@+id/tl_9"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="#6D8FB0"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    app:indicator_margin_left="2dp"
+                    app:indicator_margin_right="2dp"
+                    app:indicator_style="BLOCK" />
+
+                <com.tamsiree.rxui.view.tablayout.TGlideTabLayout
+                    android:id="@+id/tl_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="#222831"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    app:indicator_color="#393E46"
+                    app:indicator_corner_radius="5dp"
+                    app:indicator_margin_left="2dp"
+                    app:indicator_margin_right="2dp"
+                    app:indicator_style="BLOCK" />
+
+            </LinearLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vp"
+                android:layout_width="match_parent"
+                android:layout_height="84dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
